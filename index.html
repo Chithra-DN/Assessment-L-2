@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Coding Assesment L2 boilerplate</title>
+  </head>
+
+  <body>
+    <!-- Your code goes here -->
+    <div class="product-page">
+      <div class="product-images">
+        <img
+          id="main-image"
+          src="https://shorturl.at/8wgnc"
+          alt="Product Image"
+        />
+        <div class="thumbnail-images">
+          <img
+            src="https://shorturl.at/8wgnc"
+            alt="Thumbnail 1"
+            onclick="changeImage('https://shorturl.at/p6922')"
+          />
+          <img
+            src="https://shorturl.at/wTutw"
+            alt="Thumbnail 2"
+            onclick="changeImage('https://shorturl.at/wdLo9')"
+          />
+          <img
+            src="https://shorturl.at/H1bsN"
+            alt="Thumbnail 3"
+            onclick="changeImage('https://shorturl.at/H1bsN')"
+          />
+        </div>
+      </div>
+      <div class="product-details">
+        <h1>Embrace Sideboard</h1>
+        <p class="price">$12999.00 <span class="discount">35% Off</span></p>
+        <p class="original-price">$19999.00</p>
+        <div class="color-selection">
+          <label>Choose a Color:</label>
+          <div class="colors">
+            <div
+              class="color"
+              style="background-color: #d2ccae"
+              onclick="selectColor(this)"
+            ></div>
+            <div
+              class="color"
+              style="background-color: #c3c8f9"
+              onclick="selectColor(this)"
+            ></div>
+            <div
+              class="color"
+              style="background-color: #f1d8e6"
+              onclick="selectColor(this)"
+            ></div>
+          </div>
+        </div>
+        <div class="size-selection">
+          <label>Choose a Size:</label>
+          <div class="sizes">
+            <label
+              ><input type="radio" name="size" value="Small" /> Small</label
+            >
+            <label
+              ><input type="radio" name="size" value="Medium" /> Medium</label
+            >
+            <label
+              ><input type="radio" name="size" value="Large" /> Large</label
+            >
+            <label
+              ><input type="radio" name="size" value="Extra Large" /> Extra
+              Large</label
+            >
+            <label><input type="radio" name="size" value="XXL" /> XXL</label>
+          </div>
+        </div>
+        <div class="quantity-selection">
+          <button onclick="decreaseQuantity()">-</button>
+          <input type="number" id="quantity" value="1" />
+          <button onclick="increaseQuantity()">+</button>
+        </div>
+        <button class="add-to-cart" onclick="addToCart()">Add To Cart</button>
+        <p class="description">
+          The Embrace Sideboard is a stylish wear. With a top cloth designed to
+          provide superior protection and look great, this storage solution is
+          both functional and attractive. It fits seamlessly into any home
+          decor, with clean lines and a timeless look. Crafted from premium
+          materials for a combination of style, durability, and reliability.
+        </p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
